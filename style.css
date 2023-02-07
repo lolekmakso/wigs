@@ -1,0 +1,187 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 1410px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "sidebar header header header header"
+    "sidebar content content content content";
+}
+
+.sidebar {
+  width: 252px;
+  grid-area: sidebar;
+}
+
+.header {
+  width: auto;
+  grid-area: header;
+  height: 123px;
+}
+
+.content {
+  margin-inline: auto;
+  margin: 66px 52px 64px 0;
+  max-width: 1100px;
+  max-height: 783px;
+  align-items: stretch;
+  gap: 20px;
+  grid-area: content;
+  display: grid;
+  grid-template-areas:
+    "img1 img1 img3 img4"
+    "img2 img2 img3 img4"
+    "img5 img6 img7 img7"
+    "img5 img6 img8 img8";
+}
+
+ img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.img5 {
+  grid-area: img5;
+}
+
+.img6 {
+  grid-area: img6;
+}
+
+.img7 {
+  grid-area: img7;
+}
+
+.img8 {
+  grid-area: img8;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.caped-div {
+  display: flex;
+  margin-left: 56px;
+  margin-top: 59px;
+  align-items: center;
+}
+
+.circle {
+  width: 44px;
+  height: 44px;
+  background-color: #f4de4d;
+  border-radius: 50%;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.caped {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+h1 {
+  margin-left: 58px;
+  margin-top: 67px;
+}
+
+.explore {
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.sidebar-links {
+  margin-top: 54px;
+  padding-left: 60px;
+}
+
+.sidebar-links li {
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.sidebar-links li a {
+  display: flex;
+  align-items: center;
+  font-size: 15.7099px;
+  line-height: 19px;
+  color: #000000;
+  gap: 10px;
+}
+
+.header-links {
+  margin-top: 46px;
+  margin-right: 56px;
+  display: flex;
+  justify-content: right;
+  gap: 42px;
+}
+
+.header-links li a {
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.header-links li a:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
+
+.header-links li a:hover:after,
+.header-links li a:focus:after {
+  width: 100%;
+}
+
+.header-links li a:hover {
+  color: #000;
+}
+
